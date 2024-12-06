@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+</head>
+<body>
+    <script>
+        var ba=10000
+        let pin=prompt("Enter your pin")
+        if(pin==1234){
+           
+let             Qun=prompt("1.for amount check 2.for withdraw")
+                if(Qun==1){
+                    alert("Amount is 10,000.00")
+                }
+                else{
+                     Amount=prompt("enter your amount")
+                     if(Amount<=ba){
+                     alert(`${Amount} has withdraw remaining balance is ${ba-Amount}`)
+                     
+                    }
+                    else {
+                    alert("Amount is higher then you balance")
+                    }
+                }
+          
+        }
+        else{
+            alert("Wrong Pin")
+            console.log('invalid Pin')
+        }
+    </script>
+</body>
+</html>

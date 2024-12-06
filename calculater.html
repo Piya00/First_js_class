@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Simple Calculater</title>
+	<style type="text/css">
+		
+
+body {
+
+	text-align: center;
+	background-color:  #00a683;
+font-size: 20px;
+color: #002178;
+}
+
+
+	</style>
+</head>
+<body>
+
+    <h2>Calculate</h2>
+	<label>Enter first number</label>
+<br><input type="number" id="n1"><br>
+
+<label>Enter Second number</label>
+<br><input type="number" id="n2"><br><br>
+
+<label>Select operator</label>
+<select id="operator">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+<option value="/">/</option>
+</select><br>
+<button onclick="calculate()">Calculate</button>
+ 
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+            // Get values from input fields and select
+            var n1 = parseFloat(document.getElementById("n1").value);
+            var n2 = parseFloat(document.getElementById("n2").value);
+            var operator = document.getElementById("operator").value;
+            var result;
+ 
+            switch (operator) {
+                case "+":
+                    result = n1 + n2;
+                    break;
+                case "-":
+                    result = n1 - n2;
+                    break;
+                case "*":
+                    result = n1 * n2;
+                    break;
+                case "/":
+                    result = n1 / n2;
+                    break;
+                default:
+                    result = "Invalid operator";
+            }
+ 
+            // Display the result
+            document.getElementById("result").innerText = "Result is: " + result;
+        }
+</script>
+
+
+
+</body>
+</html>

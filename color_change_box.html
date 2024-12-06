@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red_box{
+            width: 200px;
+            height: 250px;
+            background: red;
+                margin-top: 4px;
+        }
+
+        .green_box{
+            width: 200px;
+            height: 250px;
+            background: green;
+            margin-top: 4px;
+        } 
+    </style>
+</head>
+<body>
+  
+    
+    <!-- <div id="red_result1"></div> -->
+    <div id="result"></div>
+    <!-- <div id="green_result"></div> -->
+    <!-- <div id="green_result1"></div> -->
+
+    <script>
+
+        let i,a
+       
+        // for(i=0;i<1;i++){
+        //     let green="<div class='green_box'></div>";
+        //     let red="  <div class='red_box'></div>";
+        //     document.getElementById('green_result').innerHTML+=`${green}`
+        //     document.getElementById('red_result').innerHTML+=`${red}`
+        // }
+        // for(i=0;i<1;i++){
+        //     let green="<div class='green_box'></div>";
+        //     let red="  <div class='red_box'></div>";
+        //     document.getElementById('green_result1').innerHTML+=`${green}`
+        //     document.getElementById('red_result1').innerHTML+=`${red}`
+        // }
+        
+        
+
+
+        for(i=1;i<100;i++){
+         
+         
+            if(i%2==0){
+                let green="<div class='green_box'></div>";
+            document.getElementById('result').innerHTML+=`${green}`}
+         
+        else{
+         let red="  <div class='red_box'></div>";
+            document.getElementById('result').innerHTML+=`${red}`
+        }
+    }
+        
+
+
+    
+
+        // for(i=0;i<5;i++){
+        //     let red="  <div class='red_box'></div>";
+        //     let green="<div class='green_box'></div>";
+        //     document.getElementById('red_result').innerHTML+=`${red}`
+        //       document.getElementById('green_result').innerHTML+=`${green}`
+        // }
+
+    </script>
+</body>
+</html>
